@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h1>Home</h1>
+
+<p>This is the home page. The HTML file resides in templates/home.html.</p>
+
+<p>Here is a link to the <a href="/about">about page</a>.</p>
+
+<p>Here is a link to the <a href="{% url "anisaga:home" %}">about page</a>, however this one uses the built-in tag url: {% url "anisaga:home" %}</p>
+{% endblock content %}
